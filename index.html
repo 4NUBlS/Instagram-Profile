@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Profile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="" id="ig_profile_pic_url_hd" alt="">
+        </div>
+        <div class="content">
+            <h2>Instagram - Profile</h2>
+            <p>บัญชีส่วนตัว : <b id="ig_is_private"></b></p>
+            <p>ชื่อผู้ใช้ : <b id="ig_username"></b></p>
+            <p>ชื่อจริง : <b id="ig_full_name"></b></p>
+            <p>โพสต์ : <b id="ig_edge_owner_to_timeline_media"></b></p>
+            <p>ผู้ติดตาม : <b id="ig_edge_followed_by"></b></p>
+            <p>กำลังติดตาม : <b id="ig_edge_follow"></b></p>
+            <p>ลิงค์ที่เกี่ยวข้อง : <b id="ig_external_url"></b></p>
+            <p>ประวัติส่วนตัว : <b id="ig_biography"></b></p>
+        </div>
+        <div class="footer">
+            <div class="ft-l">
+                <img src="https://avatars.githubusercontent.com/u/75483649?s=460&u=36a28154ab0c5b54ebf8018dc8eebd67d659c3f7&v=4" alt="">
+                <b>4NUB!S</b>
+            </div>
+            <div class="ft-r">
+                <b>Instagram - Profile</b>
+            </div>
+        </div>
+    </div>
+    <center>
+        <input type="text" onfocus="this.value=''" id="username" value="Input Username">
+        <button onclick="getUsername()">ตกลง</button>
+    </center>
+</body>
+
+</html>
